@@ -1,5 +1,8 @@
 import { Category } from "../model/category";
-import { ICategoriesRepository, ICreateCategoryDTO } from "./ICategoriesRepository";
+import {
+	ICategoriesRepository,
+	ICreateCategoryDTO,
+} from "./ICategoriesRepository";
 
 class PostgressCategoriesRepository implements ICategoriesRepository {
 	findByName(name: string): Category {
@@ -15,3 +18,4 @@ class PostgressCategoriesRepository implements ICategoriesRepository {
 }
 
 export { PostgressCategoriesRepository };
+
